@@ -1,0 +1,59 @@
+// ------------------------------- Reset ------------------------------------
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+// ------------------------------- Base ------------------------------------
+
+// Cores
+$primary-color: #1C1D25;
+
+body {
+  background-color: $primary-color;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a.link {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    transition: 0.3s;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.container {
+  padding: 0 5rem;
+}
+
+  

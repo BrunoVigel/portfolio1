@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1C1D25;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a.link {
+  position: relative;
+}
+
+a.link::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -1px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+a.link:hover::after {
+  width: 100%;
+}
+
+.container {
+  padding: 0 5rem;
+}
+
+header nav {
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+#hero {
+  margin: 22rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#hero .information {
+  color: white;
+}
+
+#hero .information h1 {
+  font-size: 5rem;
+}
+
+#hero .information p {
+  font-size: 2rem;
+}
+
+#hero .information button {
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+  background-color: #f88156;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  border-radius: 30px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+#hero .information button:hover {
+  background-color: #cc582d;
+}
+
+#hero .socials {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+}
+
+#sobre-mim {
+  background-color: white;
+}
+
+#sobre-mim .container {
+  padding: 10rem 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#sobre-mim .container .text h2 {
+  font-size: 3rem;
+}
+
+#sobre-mim .container .text p {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+#sobre-mim .container img {
+  max-width: 20%;
+  border-radius: 50%;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+
+footer .container {
+  padding: 5rem 0;
+}
+
+footer .container p:nth-child(1) {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+footer .container p:nth-child(2) {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,27 @@
+#sobre-mim {
+  background-color: white;
+
+  .container {
+    padding: 10rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+    .text {
+      h2 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 2rem;
+        font-weight: lighter;
+      }
+    }
+
+    img {
+      max-width: 20%;
+      border-radius: 50%;
+    }
+  }
+}
