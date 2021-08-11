@@ -91,22 +91,22 @@ header nav ul {
 
 #hero .information p {
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-#hero .information button {
+#hero .information a {
   font-size: 1.5rem;
   color: white;
   border: none;
   background-color: #f88156;
   padding: 1rem 2rem;
-  margin: 1rem 0;
   border-radius: 30px;
   -webkit-transition: .5s;
   transition: .5s;
   cursor: pointer;
 }
 
-#hero .information button:hover {
+#hero .information a:hover {
   background-color: #cc582d;
 }
 
@@ -147,6 +147,83 @@ header nav ul {
   border-radius: 50%;
 }
 
+#projetos {
+  background-color: white;
+}
+
+#projetos .container .title {
+  padding: 5rem 0;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+#projetos .container .projetos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 10rem;
+}
+
+#projetos .container .projetos .projeto {
+  margin: 0 2rem;
+  width: 350px;
+  -webkit-box-shadow: 5px 5px 20px #c5c3c3;
+          box-shadow: 5px 5px 20px #c5c3c3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projetos .container .projetos .projeto p {
+  text-align: center;
+}
+
+#projetos .container .projetos .projeto p:nth-child(2) {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+#projetos .container .projetos .projeto p:nth-child(3) {
+  font-weight: lighter;
+  margin-bottom: .5rem;
+}
+
+#projetos .container .projetos .projeto .line {
+  margin: 0 auto;
+  width: 90%;
+  height: 1px;
+  background-color: black;
+}
+
+#projetos .container .projetos .projeto img {
+  margin: 1rem 1rem;
+  max-width: 90%;
+  border-radius: 50%;
+}
+
+#projetos .container .projetos .projeto a {
+  margin: 1rem 0 4rem 0;
+  color: #f88156;
+}
+
+#projetos .container .projetos .projeto a:hover {
+  color: #cc582d;
+}
+
 footer {
   color: white;
   text-align: center;
@@ -164,5 +241,40 @@ footer .container p:nth-child(1) {
 
 footer .container p:nth-child(2) {
   font-size: 2rem;
+}
+
+@media (max-width: 850px) {
+  .container {
+    padding: 0 2.5rem;
+  }
+  header nav {
+    font-size: 1.5rem;
+  }
+  #hero .information h1 {
+    font-size: 4rem;
+  }
+  #sobre-mim .container {
+    display: -ms-grid;
+    display: grid;
+  }
+  #sobre-mim .container img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  #sobre-mim .container .text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    text-align: center;
+  }
+  footer .container p:nth-child(1) {
+    font-size: 2.5rem;
+  }
+  footer .container p:nth-child(2) {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

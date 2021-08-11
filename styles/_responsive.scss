@@ -1,0 +1,51 @@
+@media(max-width: 850px) {
+
+  .container {
+    padding: 0 2.5rem;
+  }
+
+  header {
+    nav {
+      font-size: 1.5rem;
+    }
+  }
+
+  #hero {
+    .information {
+      h1 {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  #sobre-mim {
+    .container {
+      display: grid;
+
+      img {
+        order: 1;
+        max-width: 50%;
+        margin: 0 auto;
+      }
+
+      .text {
+        order: 2;
+        text-align: center;
+      }
+    }
+  }
+
+  footer {
+    .container {
+      p {
+        &:nth-child(1) {
+          font-size: 2.5rem;
+        }
+
+        &:nth-child(2) {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
