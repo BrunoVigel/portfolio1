@@ -62,6 +62,7 @@ header nav {
 }
 
 header nav ul {
+  margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
