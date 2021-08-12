@@ -1,4 +1,4 @@
-@media(max-width: 850px) {
+@media(max-width: 1050px) {
 
   .container {
     padding: 0 2.5rem;
@@ -35,6 +35,16 @@
     }
   }
 
+  #projetos {
+    .container {
+      .projetos {
+        .projeto {
+          width: calc(50% - 4rem);
+        }
+      }
+    }
+  }
+
   footer {
     .container {
       p {
@@ -47,5 +57,85 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 650px) {
+  header {
+    nav {
+      font-size: 1rem;
+    }
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  #hero {
+    flex-direction: column;
+    justify-content: initial;
+    padding: 11.2rem 1rem 0 1rem ;
+
+    .information {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      a {
+        font-size: 1rem;
+        padding: .5rem 1rem;
+      }
+
+      
+    }
+
+    .socials {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2rem;
+
+      margin-top: 2rem;
+
+
+      svg {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  #sobre-mim {
+    .container {
+      padding: 1rem;
+      .text {
+        h2 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  #projetos {
+    .container {
+      .title {
+        font-size: 2rem;
+      }
+
+      .projetos {
+        .projeto {
+        width: 100%;
+        }
+        } 
+    }
+
+    
+  
   }
 }
