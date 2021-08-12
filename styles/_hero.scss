@@ -1,5 +1,5 @@
 #hero {
-  margin: 22rem 0;
+  padding: 22.3rem 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,5 +35,12 @@
   .socials {
     display: grid;
     gap: 1rem;
+
+    a {
+      transition: .2s;
+      &:hover {
+        transform: translateY(-10px);
+      }
+    }
   }
 }

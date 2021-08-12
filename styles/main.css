@@ -69,7 +69,7 @@ header nav ul {
 }
 
 #hero {
-  margin: 22rem 0;
+  padding: 22.3rem 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,6 +114,16 @@ header nav ul {
   display: -ms-grid;
   display: grid;
   gap: 1rem;
+}
+
+#hero .socials a {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+#hero .socials a:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 #sobre-mim {
