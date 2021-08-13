@@ -15,30 +15,35 @@
       flex-wrap: wrap;
       padding-bottom: 10rem;
 
+      div:first-child {
+        margin: 0 0.5rem 0 0;
+      }
 
+      div:last-child {
+        margin: 0 0 0 0.5rem;
+      }
 
       .projeto {
         margin: 0 .5rem;
-        width: calc(25% - 2.5rem);
-        box-shadow: 5px 5px 20px rgb(197, 195, 195);
+        width: calc(25% - 1rem);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         display: flex;
         flex-direction: column;
         align-items: center;
         border-radius: 6px;
-      
 
+      
         p {
           text-align: center;
 
           &:nth-child(2) {
             font-weight: bold;
             font-size: 1.2rem;
-            margin: 1rem 0;
           }
 
           &:nth-child(3) {
             font-weight: lighter;
-            padding: 2rem 3rem;
+            padding: 2rem 1rem;
             margin-bottom: .5rem;
           }
         }

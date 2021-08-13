@@ -51,6 +51,83 @@ a.link:hover::after {
   padding: 0 5rem;
 }
 
+.exit-intent-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background: rgba(33, 33, 33, 0.8);
+  -webkit-transform: translateY(60%) scale(0);
+          transform: translateY(60%) scale(0);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.exit-intent-popup.visible {
+  -webkit-transform: translateY(0) scale(1);
+          transform: translateY(0) scale(1);
+}
+
+.newsletter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* Popup-specific styles */
+.newsletter {
+  background: #FFF;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.newsletter b {
+  font-size: 2.5rem;
+}
+
+.newsletter p {
+  font-size: 1.5rem;
+}
+
+.newsletter form input {
+  display: block;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: .2rem 0;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.newsletter form textarea {
+  display: block;
+}
+
+.newsletter form button {
+  border: none;
+  background-color: black;
+  color: white;
+  max-width: 100px;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.newsletter .close {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+}
+
 header nav {
   font-size: 2rem;
   display: -webkit-box;
@@ -186,11 +263,19 @@ header nav ul {
   padding-bottom: 10rem;
 }
 
+#projetos .container .projetos div:first-child {
+  margin: 0 0.5rem 0 0;
+}
+
+#projetos .container .projetos div:last-child {
+  margin: 0 0 0 0.5rem;
+}
+
 #projetos .container .projetos .projeto {
   margin: 0 .5rem;
-  width: calc(25% - 2.5rem);
-  -webkit-box-shadow: 5px 5px 20px #c5c3c3;
-          box-shadow: 5px 5px 20px #c5c3c3;
+  width: calc(25% - 1rem);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,12 +296,11 @@ header nav ul {
 #projetos .container .projetos .projeto p:nth-child(2) {
   font-weight: bold;
   font-size: 1.2rem;
-  margin: 1rem 0;
 }
 
 #projetos .container .projetos .projeto p:nth-child(3) {
   font-weight: lighter;
-  padding: 2rem 3rem;
+  padding: 2rem 1rem;
   margin-bottom: .5rem;
 }
 

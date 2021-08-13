@@ -37,6 +37,43 @@
       </nav>
     </header>
     <main>
+      <div class="exit-intent-popup">
+        <div class="newsletter">
+          <b>Já está saindo? Entre em contato comigo.</b>
+          <p>Deixe sua mensagem!</p>
+          <form
+            action="https://getform.io/f/2d2ac769-ed66-4694-8aed-48e86524f630"
+            method="POST"
+          >
+            <input
+              type="text"
+              placeholder="Seu nome"
+              size="25"
+              name="name"
+              id="name"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Seu email"
+              size="25"
+              name="email"
+              id="email"
+              class="email"
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              rows="8"
+              placeholder="Mensagem"
+              required
+            ></textarea>
+            <button class="submit">Enviar</button>
+          </form>
+          <span class="close">x</span>
+        </div>
+      </div>
       <section id="hero" class="container">
         <div class="information">
           <h1>Bruno Vigel</h1>
@@ -188,6 +225,7 @@
     <!-- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- script -->
+    <script src="cookie.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
