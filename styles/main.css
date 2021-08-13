@@ -216,6 +216,7 @@ header nav ul {
 
 #projetos .container .projetos .projeto p:nth-child(3) {
   font-weight: lighter;
+  padding: 2rem 3rem;
   margin-bottom: .5rem;
 }
 
@@ -289,6 +290,7 @@ footer .container p:nth-child(2) {
   }
   #projetos .container .projetos .projeto {
     width: calc(50% - 4rem);
+    margin-top: 1.5rem;
   }
   footer .container p:nth-child(1) {
     font-size: 2.5rem;
@@ -336,7 +338,7 @@ footer .container p:nth-child(2) {
     height: 64px;
   }
   #sobre-mim .container {
-    padding: 1rem;
+    padding: 5rem 1rem 0 1rem;
   }
   #sobre-mim .container .text h2 {
     font-size: 2rem;
