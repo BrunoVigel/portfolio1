@@ -28,13 +28,14 @@ a {
 }
 
 a.link {
+  color: #f88156;
   position: relative;
 }
 
 a.link::after {
   content: "";
   position: absolute;
-  background-color: white;
+  background-color: #f88156;
   height: 2px;
   width: 0;
   left: 0;
@@ -49,6 +50,31 @@ a.link:hover::after {
 
 .container {
   padding: 0 5rem;
+}
+
+.back-to-top {
+  background: black;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.5rem;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  font-size: 1.5rem;
+  line-height: 0;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .exit-intent-popup {
@@ -128,6 +154,14 @@ a.link:hover::after {
   height: 10px;
 }
 
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
 header nav {
   font-size: 2rem;
   display: -webkit-box;
@@ -144,6 +178,11 @@ header nav ul {
   display: -ms-flexbox;
   display: flex;
   gap: 2rem;
+}
+
+#header.scroll {
+  -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
 }
 
 #hero {
@@ -343,6 +382,37 @@ footer .container p:nth-child(1) {
 
 footer .container p:nth-child(2) {
   font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+footer .container a {
+  font-size: 1rem;
+  color: white;
+  border: none;
+  background-color: #26CC64;
+  -webkit-transition: .2s;
+  transition: .2s;
+  padding: .5rem 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+footer .container a:hover {
+  background-color: #16b14f;
+}
+
+footer .container a a.back-to-top {
+  display: inline;
+}
+
+footer .container a svg {
+  margin-right: .5rem;
 }
 
 @media (max-width: 1050px) {

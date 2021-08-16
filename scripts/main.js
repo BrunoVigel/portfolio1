@@ -32,3 +32,32 @@ if (!CookieService.getCookie('exitIntentShown')) {
     document.querySelector('.exit-intent-popup').addEventListener('click', exit)
   }, 0)
 }
+
+/* mudar o header da página quando der scroll */
+// const header = document.querySelector('#header')
+// const navHeight = header.offsetHeight
+
+// function changeHeaderWhenScroll() {
+//   if (window.scrollY >= navHeight) {
+//     // scroll é maior que a altura do header
+//     header.classList.add('scroll')
+//   } else {
+//     // menor que a altura do header
+//     header.classList.remove('scroll')
+//   }
+// }
+
+const backToTopButton = document.querySelector('.back-to-top')
+
+function backToTop() {
+  if (window.scrollY >= 300) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
+  }
+}
+
+window.addEventListener('scroll', function () {
+  // changeHeaderWhenScroll()
+  backToTop()
+})

@@ -13,7 +13,33 @@ footer {
 
       &:nth-child(2) {
         font-size: 2rem;
+        margin-bottom: 1rem;
       }
     }
-  }  
+
+    a {
+      font-size: 1rem;
+      color: white;
+      border: none;
+      background-color: #26CC64;
+      transition: .2s;
+      padding: .5rem 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      align-items: center;
+      display: inline-flex;
+
+      &:hover {
+      background-color: #16b14f;
+      }
+
+      a.back-to-top {
+        display: inline
+      }
+
+      svg {
+        margin-right: .5rem;
+      }
+    }
+  } 
 }
