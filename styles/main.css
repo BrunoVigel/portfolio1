@@ -532,6 +532,14 @@ footer .container a svg {
             order: 2;
     text-align: center;
   }
+  #skills .swiper-slide svg {
+    width: 200px;
+    height: 200px;
+  }
+  #skills dd {
+    font-size: .8rem;
+    text-align: left;
+  }
   #projetos .container .projetos .projeto {
     width: calc(50% - 4rem);
     margin-top: 1.5rem;
@@ -582,10 +590,15 @@ footer .container a svg {
     visibility: hidden;
     opacity: 0;
     position: absolute;
-    top: 2rem;
+    top: 1.5rem;
     right: 2rem;
     -webkit-transition: .2s;
     transition: .2s;
+  }
+  nav .icon-menu {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
   }
   nav.show .icon-menu {
     visibility: hidden;

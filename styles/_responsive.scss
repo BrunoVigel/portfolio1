@@ -35,6 +35,19 @@
     }
   }
 
+  #skills {
+    .swiper-slide {
+      svg {
+        width: 200px;
+        height: 200px;
+      }
+    }
+    dd {
+      font-size: .8rem;
+      text-align: left;
+    }
+  }
+
   #projetos {
     .container {
       .projetos {
@@ -110,10 +123,16 @@
       opacity: 0;
 
       position: absolute;
-      top: 2rem;
+      top: 1.5rem;
       right: 2rem;
 
       transition: .2s;
+    }
+
+    .icon-menu {
+      position: absolute;
+      top: 1.5rem;
+      right: 2rem;
     }
   }
 
