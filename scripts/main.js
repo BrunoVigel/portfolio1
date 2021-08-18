@@ -1,6 +1,23 @@
 // aos
 AOS.init()
 
+// swiper
+var swiper = new Swiper('.mySwiper', {
+  slidesPerView: 2,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+  mousewheel: true,
+  keyboard: true,
+  breakpoints: {
+    650: {
+      slidesPerView: 1
+    }
+  }
+})
+
 //exit intent
 const exit = e => {
   const shouldExit =
@@ -33,19 +50,38 @@ if (!CookieService.getCookie('exitIntentShown')) {
   }, 0)
 }
 
-/* mudar o header da página quando der scroll */
-// const header = document.querySelector('#header')
-// const navHeight = header.offsetHeight
+// Abre e fecha o menu quando clicar no icone: hamburguer e x
+const nav = document.querySelector('nav')
+const toggle = document.querySelectorAll('nav .toggle')
 
-// function changeHeaderWhenScroll() {
-//   if (window.scrollY >= navHeight) {
-//     // scroll é maior que a altura do header
-//     header.classList.add('scroll')
-//   } else {
-//     // menor que a altura do header
-//     header.classList.remove('scroll')
-//   }
-// }
+for (const element of toggle) {
+  element.addEventListener('click', function () {
+    nav.classList.toggle('show')
+  })
+}
+
+/* quando clicar em um item do menu, esconder o menu */
+const links = document.querySelectorAll('nav ul li a')
+
+for (const link of links) {
+  link.addEventListener('click', function () {
+    nav.classList.remove('show')
+  })
+}
+
+/* mudar o header da página quando der scroll */
+const header = document.querySelector('header')
+const navHeight = header.offsetHeight
+
+function changeHeaderWhenScroll() {
+  if (window.scrollY >= navHeight) {
+    // scroll é maior que a altura do header
+    header.classList.add('scroll')
+  } else {
+    // menor que a altura do header
+    header.classList.remove('scroll')
+  }
+}
 
 const backToTopButton = document.querySelector('.back-to-top')
 
@@ -58,6 +94,6 @@ function backToTop() {
 }
 
 window.addEventListener('scroll', function () {
-  // changeHeaderWhenScroll()
+  changeHeaderWhenScroll()
   backToTop()
 })

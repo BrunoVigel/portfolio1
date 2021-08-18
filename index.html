@@ -9,6 +9,12 @@
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,12 +34,43 @@
             <a class="link" href="#sobre-mim">Sobre mim</a>
           </li>
           <li>
+            <a class="link" href="#skills">Skills</a>
+          </li>
+          <li>
             <a class="link" href="#projetos">Projetos</a>
           </li>
           <li>
             <a class="link" href="#contato">Contato</a>
           </li>
         </ul>
+        <svg
+          class="toggle icon-menu"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="rgb(248, 129, 86)"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <title>menu</title>
+          <path
+            d="M3 13h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 7h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 19h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1z"
+          ></path>
+        </svg>
+        <svg
+          class="toggle icon-close"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="rgb(248, 129, 86)"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <title>x</title>
+          <path
+            d="M5.293 6.707l5.293 5.293-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l5.293-5.293 5.293 5.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414l-5.293-5.293 5.293-5.293c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-5.293 5.293-5.293-5.293c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z"
+          ></path>
+        </svg>
       </nav>
     </header>
     <main>
@@ -154,6 +191,28 @@
         </div>
       </section>
 
+      <section id="skills">
+        <p class="title">Skills</p>
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="https://via.placeholder.com/600x450/817F82" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://via.placeholder.com/600x450/817F82" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://via.placeholder.com/600x450/817F82" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://via.placeholder.com/600x450/817F82" alt="" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+
       <section id="projetos">
         <div class="container">
           <p class="title">Projetos</p>
@@ -220,7 +279,8 @@
       <div class="container" data-aos="fade-right">
         <p>Entre em contato</p>
         <p>brunorosav@gmail.com</p>
-        <a href="#"
+        <a
+          href="https://api.whatsapp.com/send?phone=+5551995569237SeuNúmero&text=Teste"
           ><svg
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
@@ -253,6 +313,9 @@
         ></path>
       </svg>
     </a>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- script -->
