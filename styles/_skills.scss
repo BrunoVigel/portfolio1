@@ -14,11 +14,15 @@
     display: flex;
     flex-direction: column;
 
-    p {
+    dt {
       font-size: 2rem;
       font-weight: bold;
 
       padding-top: 2rem;
+    }
+
+    dd {
+      padding: 0 2rem;
     }
   }
 

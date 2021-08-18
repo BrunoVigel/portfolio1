@@ -50,6 +50,8 @@
 
     textarea {
       display: block;
+      width: 70%;
+      font-size: 1.2rem;
     }
     
     button {
@@ -61,6 +63,14 @@
       border-radius: 5px;
       margin-top: 1rem;
       cursor: pointer;
+      border: 1px solid black;
+      transition: .2s;
+
+      &:hover {
+        border: 1px solid black;
+        color: black;
+        background-color: white;
+      }
     }
   }
 

@@ -81,6 +81,8 @@ a.active {
 
   transition: 0.3s;
   transform: translateY(100%);
+
+  z-index: 999;
 }
 
 .back-to-top.show {

@@ -12,7 +12,7 @@ var swiper = new Swiper('.mySwiper', {
   mousewheel: true,
   keyboard: true,
   breakpoints: {
-    650: {
+    780: {
       slidesPerView: 2
     }
   }

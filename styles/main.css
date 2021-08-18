@@ -73,6 +73,7 @@ a.active a.active {
   transition: 0.3s;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
+  z-index: 999;
 }
 
 .back-to-top.show {
@@ -166,6 +167,8 @@ a.active a.active {
 
 .newsletter form textarea {
   display: block;
+  width: 70%;
+  font-size: 1.2rem;
 }
 
 .newsletter form button {
@@ -177,6 +180,15 @@ a.active a.active {
   border-radius: 5px;
   margin-top: 1rem;
   cursor: pointer;
+  border: 1px solid black;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.newsletter form button:hover {
+  border: 1px solid black;
+  color: black;
+  background-color: white;
 }
 
 .newsletter .close {
@@ -342,10 +354,14 @@ header.scroll {
           flex-direction: column;
 }
 
-#skills .swiper-slide p {
+#skills .swiper-slide dt {
   font-size: 2rem;
   font-weight: bold;
   padding-top: 2rem;
+}
+
+#skills .swiper-slide dd {
+  padding: 0 2rem;
 }
 
 #skills .swiper-button-next,
