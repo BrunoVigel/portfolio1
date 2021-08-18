@@ -1,6 +1,6 @@
 header {
 
-  padding-top: 2rem;
+  padding: 1rem 0;
   
   nav {
     font-size: 2rem;
@@ -25,5 +25,6 @@ header.scroll {
   top: 0;
   left: 0;
   z-index: 100;
-  // box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+  background-color: #1c1d259d;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
 }

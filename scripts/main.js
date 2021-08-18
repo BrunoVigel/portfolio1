@@ -3,7 +3,7 @@ AOS.init()
 
 // swiper
 var swiper = new Swiper('.mySwiper', {
-  slidesPerView: 2,
+  slidesPerView: 1,
 
   navigation: {
     nextEl: '.swiper-button-next',
@@ -13,7 +13,7 @@ var swiper = new Swiper('.mySwiper', {
   keyboard: true,
   breakpoints: {
     650: {
-      slidesPerView: 1
+      slidesPerView: 2
     }
   }
 })
