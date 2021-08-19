@@ -2,6 +2,8 @@
   background-color: #ffffff;
 
   .container {
+
+    
     .title {
       padding: 5rem 0;
       text-align: center;
@@ -15,14 +17,15 @@
     flex-direction: column;
 
     dt {
-      font-size: 2rem;
+      font-size: 1.2rem;
       font-weight: bold;
 
       padding-top: 2rem;
     }
 
     dd {
-      padding: 0 2rem;
+      font-size: 1rem;
+      padding: 0 2.5rem;
     }
   }
 

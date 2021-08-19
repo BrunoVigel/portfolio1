@@ -9,7 +9,7 @@ var swiper = new Swiper('.mySwiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
   },
-  mousewheel: true,
+  mousewheel: false,
   keyboard: true,
   breakpoints: {
     780: {
