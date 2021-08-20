@@ -76,29 +76,33 @@
     <main>
       <div class="exit-intent-popup">
         <div class="newsletter">
-          <b>Já está saindo? Entre em contato comigo.</b>
-          <p>Deixe sua mensagem!</p>
+          <div class="text">
+            <b>Já está saindo? Entre em contato comigo.</b>
+            <p>Deixe sua mensagem!</p>
+          </div>
           <form
             action="https://getform.io/f/2d2ac769-ed66-4694-8aed-48e86524f630"
             method="POST"
           >
-            <input
-              type="text"
-              placeholder="Seu nome"
-              size="25"
-              name="name"
-              id="name"
-              required
-            />
-            <input
-              type="email"
-              placeholder="Seu email"
-              size="25"
-              name="email"
-              id="email"
-              class="email"
-              required
-            />
+            <div class="input-info">
+              <input
+                type="text"
+                placeholder="Seu nome"
+                size="25"
+                name="name"
+                id="name"
+                required
+              />
+              <input
+                type="email"
+                placeholder="Seu email"
+                size="25"
+                name="email"
+                id="email"
+                class="email"
+                required
+              />
+            </div>
             <textarea
               name="message"
               id="message"

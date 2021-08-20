@@ -4,7 +4,12 @@
     padding: 0 2.5rem;
   }
 
-  
+  header {
+    nav {
+      font-size: 1rem;
+
+    }
+  }
 
   #hero {
     .information {
@@ -86,7 +91,6 @@
 @media (max-width: 650px) {
   header {
     nav {
-
 
       ul {
         opacity: 0;
