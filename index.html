@@ -74,7 +74,7 @@
       </nav>
     </header>
     <main>
-      <div class="exit-intent-popup">
+      <div class="exit-intent-popup visible">
         <div class="newsletter">
           <div class="text">
             <b>Já está saindo? Entre em contato comigo.</b>
@@ -85,23 +85,18 @@
             method="POST"
           >
             <div class="input-info">
-              <input
-                type="text"
-                placeholder="Seu nome"
-                size="25"
-                name="name"
-                id="name"
-                required
-              />
-              <input
-                type="email"
-                placeholder="Seu email"
-                size="25"
-                name="email"
-                id="email"
-                class="email"
-                required
-              />
+              <div class="group">
+                <input type="text" required />
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Seu Nome</label>
+              </div>
+              <div class="group">
+                <input type="text" required />
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Seu Email</label>
+              </div>
             </div>
             <textarea
               name="message"
