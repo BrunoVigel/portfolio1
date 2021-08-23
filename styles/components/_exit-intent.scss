@@ -45,6 +45,7 @@
     }
   }
 
+  
   form {
     background-color: white;
     padding: 2rem;
@@ -67,12 +68,15 @@
   }
   input 				{
     font-size:18px;
-    padding:10px 10px 10px 5px;
+    padding:10px;
     width:300px;
-    border:none;
-    border-bottom:1px solid #757575;
+    border:1px solid #757575;
+    border-radius: 6px;
   }
-  input:focus 		{ outline:none; }
+  input:focus 		{ 
+    outline: none;
+    border: 1px solid #5264AE;
+  }
 
   /* LABEL ======================================= */
   label 				 {
@@ -81,7 +85,7 @@
     font-weight:normal;
     position:absolute;
     pointer-events:none;
-    left:5px;
+    left:10px;
     top:10px;
     transition:0.2s ease all; 
     -moz-transition:0.2s ease all; 
@@ -90,13 +94,22 @@
 
   /* active state */
   input:focus ~ label, input:valid ~ label 		{
-    top:-20px;
-    font-size:14px;
-    color:#5264AE;
+    top: -10px;
+    left: 10px;
+    font-size: 14px;
+    color: #5264AE;
+    background-color: white;
+    border-radius: 6px;
+    z-index: 999;
   }
 
   /* BOTTOM BARS ================================= */
-  .bar 	{ position:relative; display:block; width:300px; }
+  .bar 	{ 
+    position:relative; 
+    display:block; 
+    width:300px; 
+  }
+
   .bar:before, .bar:after 	{
     content:'';
     height:2px; 
@@ -146,17 +159,40 @@
   }
     }
     
-    textarea {
-      display: block;
+    .group-message {
+      position: relative;
       width: 74.5%;
-      font-size: 1.2rem;
-      border: 1px solid gray;
-      border-radius: 6px;
-      padding: .5rem .5rem;
-      outline: none;
+      textarea {
+        display: block;
+        width: 100%;
+        font-size: 1.2rem;
+        border: 1px solid gray;
+        border-radius: 6px;
+        padding: 10px;
+        outline: none;
+  
+        &:focus {
+          border: 1px solid #5264AE;
+        }
 
-      &:focus {
-        border: 1px solid #5264AE;
+        &:focus ~ label {
+          font-size: 14px;
+          top: -10px;
+          left: 10px;
+          background-color: white;
+          color: #5264AE;
+        }
+      }
+
+      label {
+        position: absolute;
+        left:10px;
+        top:10px;
+        color:#999; 
+        font-size:18px;
+        font-weight:normal;
+        pointer-events:none;
+        transition: .2s;
       }
     }
 
@@ -177,8 +213,6 @@
       }
     }
   }
-
-
   .close {
     color: white;
     position: absolute;

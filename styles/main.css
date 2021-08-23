@@ -204,14 +204,15 @@ a.active a.active {
 
 .newsletter form .input-info input {
   font-size: 18px;
-  padding: 10px 10px 10px 5px;
+  padding: 10px;
   width: 300px;
-  border: none;
-  border-bottom: 1px solid #757575;
+  border: 1px solid #757575;
+  border-radius: 6px;
 }
 
 .newsletter form .input-info input:focus {
   outline: none;
+  border: 1px solid #5264AE;
 }
 
 .newsletter form .input-info label {
@@ -220,7 +221,7 @@ a.active a.active {
   font-weight: normal;
   position: absolute;
   pointer-events: none;
-  left: 5px;
+  left: 10px;
   top: 10px;
   transition: 0.2s ease all;
   -moz-transition: 0.2s ease all;
@@ -228,9 +229,13 @@ a.active a.active {
 }
 
 .newsletter form .input-info input:focus ~ label, .newsletter form .input-info input:valid ~ label {
-  top: -20px;
+  top: -10px;
+  left: 10px;
   font-size: 14px;
   color: #5264AE;
+  background-color: white;
+  border-radius: 6px;
+  z-index: 999;
 }
 
 .newsletter form .input-info .bar {
@@ -298,18 +303,43 @@ a.active a.active {
   }
 }
 
-.newsletter form textarea {
-  display: block;
+.newsletter form .group-message {
+  position: relative;
   width: 74.5%;
+}
+
+.newsletter form .group-message textarea {
+  display: block;
+  width: 100%;
   font-size: 1.2rem;
   border: 1px solid gray;
   border-radius: 6px;
-  padding: .5rem .5rem;
+  padding: 10px;
   outline: none;
 }
 
-.newsletter form textarea:focus {
+.newsletter form .group-message textarea:focus {
   border: 1px solid #5264AE;
+}
+
+.newsletter form .group-message textarea:focus ~ label {
+  font-size: 14px;
+  top: -10px;
+  left: 10px;
+  background-color: white;
+  color: #5264AE;
+}
+
+.newsletter form .group-message label {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  pointer-events: none;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .newsletter form button {
