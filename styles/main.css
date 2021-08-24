@@ -199,13 +199,13 @@ a.active a.active {
 }
 
 .newsletter form .input-info .group:nth-child(1) {
-  margin-right: 2rem;
+  margin-right: 7rem;
 }
 
 .newsletter form .input-info input {
   font-size: 18px;
   padding: 10px;
-  width: 300px;
+  width: 100%;
   border: 1px solid #757575;
   border-radius: 6px;
 }
@@ -305,7 +305,7 @@ a.active a.active {
 
 .newsletter form .group-message {
   position: relative;
-  width: 74.5%;
+  width: 45rem;
 }
 
 .newsletter form .group-message textarea {
