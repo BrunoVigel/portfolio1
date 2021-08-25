@@ -513,7 +513,11 @@ header.scroll {
   font-weight: bold;
 }
 
-#skills .swiper-slide {
+#skills .swiper-container {
+  overflow: hidden;
+}
+
+#skills .swiper-container .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -523,20 +527,20 @@ header.scroll {
           flex-direction: column;
 }
 
-#skills .swiper-slide dt {
+#skills .swiper-container .swiper-slide dt {
   font-size: 1.2rem;
   font-weight: bold;
   padding-top: 2rem;
 }
 
-#skills .swiper-slide dd {
+#skills .swiper-container .swiper-slide dd {
   font-size: 1rem;
   font-weight: lighter;
   padding: 0 2.5rem;
 }
 
-#skills .swiper-button-next,
-#skills .swiper-button-prev {
+#skills .swiper-container .swiper-button-next,
+#skills .swiper-container .swiper-button-prev {
   color: #f88156;
 }
 
