@@ -561,8 +561,8 @@ header.scroll {
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
-  -ms-grid-rows: 1fr 20.2% 1fr;
-      grid-template-rows: 1fr 20.2% 1fr;
+  -ms-grid-rows: 39.5% 19.8% 1fr;
+      grid-template-rows: 39.5% 19.8% 1fr;
       grid-template-areas: "p1 p1" "p2 p3" "p4 p4";
 }
 
@@ -592,16 +592,38 @@ header.scroll {
   grid-area: p4;
 }
 
-#projetos .container .projetos .projeto a {
+#projetos .container .projetos .projeto {
+  position: relative;
+  overflow: hidden;
+}
+
+#projetos .container .projetos .projeto img {
   -webkit-transition: .5s;
   transition: .5s;
 }
 
-#projetos .container .projetos .projeto a:hover {
+#projetos .container .projetos .projeto span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  color: #cc582d;
+  font-weight: bolder;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+#projetos .container .projetos .projeto:hover img {
   -webkit-filter: blur(2px);
           filter: blur(2px);
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#projetos .container .projetos .projeto:hover span {
+  opacity: 1;
 }
 
 footer {
