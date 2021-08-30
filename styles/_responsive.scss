@@ -59,20 +59,6 @@
     }
   }
   
-
-  
-
-  #projetos {
-    .container {
-      .projetos {
-        .projeto {
-          width: calc(50% - 4rem);
-          margin-top: 1.5rem
-        }
-      }
-    }
-  }
-
   footer {
     .container {
       p {
@@ -221,16 +207,10 @@
       .title {
         font-size: 2rem;
       }
-
       .projetos {
-        .projeto {
-        width: 100%;
-        }
-        } 
+        display: block;
+      }
     }
-
-    
-  
   }
 }
 
