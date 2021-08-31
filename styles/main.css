@@ -561,8 +561,8 @@ header.scroll {
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
-  -ms-grid-rows: 39.5% 19.8% 1fr;
-      grid-template-rows: 39.5% 19.8% 1fr;
+  -ms-grid-rows: 39.5% 17% 1fr;
+      grid-template-rows: 39.5% 17% 1fr;
       grid-template-areas: "p1 p1" "p2 p3" "p4 p4";
 }
 
@@ -618,8 +618,8 @@ header.scroll {
 #projetos .container .projetos .projeto:hover img {
   -webkit-filter: blur(2px);
           filter: blur(2px);
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #projetos .container .projetos .projeto:hover span {
