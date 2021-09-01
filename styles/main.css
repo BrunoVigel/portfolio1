@@ -596,6 +596,10 @@ header.scroll {
   position: relative;
 }
 
+#projetos .container .projetos .projeto img {
+  max-width: 100%;
+}
+
 #projetos .container .projetos .projeto .overlay {
   position: absolute;
   top: 0;

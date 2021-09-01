@@ -13,7 +13,7 @@
     .projetos {
       display: grid;
       grid-template-columns: 50% 50%;
-      grid-template-rows: 39.75% 18% 39.75%;
+      grid-template-rows: 36.8% 20.1% 36.8%;
       grid-template-areas: "p1 p1"
                            "p2 p3"
                            "p4 p4";
@@ -35,6 +35,10 @@
 
       .projeto {
         position: relative;
+        
+        img {
+          max-width: 100%;
+        }
 
         .overlay {
           position: absolute;
