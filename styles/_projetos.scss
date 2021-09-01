@@ -11,25 +11,13 @@
     }
 
     .projetos {
+      overflow: hidden;
+
       display: grid;
       grid-template-columns: 50% 50%;
       grid-template-areas: "p1 p2"
                            "p3 p4";
-      .p1 {
-        grid-area: p1;
-      }
-
-      .p2 {
-        grid-area: p2;
-      }
-
-      .p3 {
-        grid-area: p3;
-      }
-
-      .p4 {
-        grid-area: p4;
-      }
+      
 
       a {
         position: relative;
