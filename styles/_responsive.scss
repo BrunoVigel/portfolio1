@@ -58,6 +58,19 @@
       }
     }
   }
+
+  #projetos {
+    .container {
+      .projetos {
+        a {
+          p.title {
+            bottom: -15%;
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
   
   footer {
     .container {
@@ -209,6 +222,13 @@
       }
       .projetos {
         display: block;
+
+        a {
+          p.title {
+            bottom: -25%;
+            font-size: 1rem;
+          }
+        }
       }
     }
   }

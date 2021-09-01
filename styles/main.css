@@ -625,10 +625,19 @@ header.scroll {
   opacity: 0;
   cursor: pointer;
   color: white;
+  font-size: 2rem;
   font-weight: bolder;
   -webkit-transition: .5s;
   transition: .5s;
   z-index: 3;
+}
+
+#projetos .container .projetos a p.title {
+  font-size: 3rem;
+  color: #f88156;
+  position: absolute;
+  bottom: -5%;
+  left: 2%;
 }
 
 #projetos .container .projetos a:hover span {
@@ -729,6 +738,10 @@ footer .container a svg {
   #skills .swiper-slide dd {
     font-size: 1rem;
     text-align: left;
+  }
+  #projetos .container .projetos a p.title {
+    bottom: -15%;
+    font-size: 2rem;
   }
   footer .container p:nth-child(1) {
     font-size: 2.5rem;
@@ -838,6 +851,10 @@ footer .container a svg {
   }
   #projetos .container .projetos {
     display: block;
+  }
+  #projetos .container .projetos a p.title {
+    bottom: -25%;
+    font-size: 1rem;
   }
 }
 
