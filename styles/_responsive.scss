@@ -143,7 +143,7 @@
 
     .icon-menu {
       position: absolute;
-      top: 1rem;
+      top: 1.5rem;
       right: 2rem;
     }
   }
@@ -269,6 +269,18 @@
       svg {
         width: 32px;
         height: 32px;
+      }
+    }
+  }
+
+  #projetos {
+    .container {
+      .projetos {
+        a {
+          span {
+            font-size: 1rem;
+          }
+        }
       }
     }
   }

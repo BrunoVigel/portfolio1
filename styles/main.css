@@ -592,6 +592,7 @@ header.scroll {
   position: relative;
   display: block;
   height: 100%;
+  border-radius: 10px;
 }
 
 #projetos .container .projetos a img {
@@ -788,7 +789,7 @@ footer .container a svg {
   }
   nav .icon-menu {
     position: absolute;
-    top: 1rem;
+    top: 1.5rem;
     right: 2rem;
   }
   nav.show .icon-menu {
@@ -885,6 +886,9 @@ footer .container a svg {
   #hero .socials svg {
     width: 32px;
     height: 32px;
+  }
+  #projetos .container .projetos a span {
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
