@@ -13,7 +13,7 @@
     .projetos {
       display: grid;
       grid-template-columns: 50% 50%;
-      grid-template-rows: 39.5% 17% 1fr;
+      grid-template-rows: 39.5% 18% 1fr;
       grid-template-areas: "p1 p1"
                            "p2 p3"
                            "p4 p4";
@@ -35,29 +35,29 @@
 
       .projeto {
         position: relative;
-        overflow: hidden;
-        img {
-          transition: .5s;
-        }
+
         span {
           position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
           opacity: 0;
-          color: rgb(204, 88, 45);
+
+          cursor: pointer;
+
+          color: white;
+
           font-weight: bolder;
           transition: .2s;
+          z-index: 3;
         }
+        
         &:hover {
-          img {
-            filter: blur(2px);
-            transform: scale(1.1);
-          }
           span {
             opacity: 1;
           }
         }
+        
       }
       
     }
