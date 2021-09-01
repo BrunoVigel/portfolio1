@@ -600,6 +600,7 @@ header.scroll {
 
 #projetos .container .projetos a img {
   width: 100%;
+  height: 100%;
 }
 
 #projetos .container .projetos a .overlay {
