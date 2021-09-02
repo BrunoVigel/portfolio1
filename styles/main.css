@@ -606,15 +606,6 @@ header.scroll {
   z-index: 3;
 }
 
-#projetos .container .projetos a p {
-  font-size: 1.125rem;
-  font-weight: bolder;
-  color: #f88156;
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-}
-
 #projetos .container .projetos a:hover span {
   opacity: 1;
 }
