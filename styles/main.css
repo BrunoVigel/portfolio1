@@ -409,7 +409,7 @@ header.scroll {
 }
 
 #hero {
-  height: 100vh;
+  padding: 20rem 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -431,7 +431,7 @@ header.scroll {
 
 #hero .information p {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 #hero .information a {
@@ -785,7 +785,7 @@ footer .container a svg {
     -webkit-box-pack: initial;
         -ms-flex-pack: initial;
             justify-content: initial;
-    padding: 7rem 1rem 0 1rem;
+    padding: 5rem 1rem;
   }
   #hero .information {
     display: -webkit-box;
