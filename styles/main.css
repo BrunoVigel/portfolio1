@@ -58,7 +58,7 @@ a.active a.active {
 }
 
 .back-to-top {
-  background: black;
+  background: #1C1D25;
   position: fixed;
   right: 1rem;
   bottom: 1rem;
@@ -599,19 +599,20 @@ header.scroll {
   opacity: 0;
   cursor: pointer;
   color: white;
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: bolder;
   -webkit-transition: .5s;
   transition: .5s;
   z-index: 3;
 }
 
-#projetos .container .projetos a p.title {
+#projetos .container .projetos a p {
   font-size: 1.125rem;
+  font-weight: bolder;
   color: #f88156;
   position: absolute;
-  bottom: -11%;
-  left: 4.3%;
+  bottom: 20px;
+  left: 20px;
 }
 
 #projetos .container .projetos a:hover span {
@@ -625,7 +626,7 @@ header.scroll {
 footer {
   color: white;
   text-align: center;
-  background-color: black;
+  background-color: #1C1D25;
 }
 
 footer .container {
@@ -713,9 +714,6 @@ footer .container a svg {
     font-size: 1rem;
     text-align: left;
   }
-  #projetos .container .projetos a p.title {
-    bottom: -25%;
-  }
   footer .container p:nth-child(1) {
     font-size: 2.5rem;
   }
@@ -725,6 +723,11 @@ footer .container a svg {
 }
 
 @media (max-width: 650px) {
+  header.scroll {
+    background-color: rgba(255, 255, 255, 0);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
   header nav ul {
     opacity: 0;
     visibility: hidden;
@@ -759,15 +762,15 @@ footer .container a svg {
     visibility: hidden;
     opacity: 0;
     position: absolute;
-    top: 1rem;
-    right: 2rem;
+    top: 1.5rem;
+    right: 1rem;
     -webkit-transition: .2s;
     transition: .2s;
   }
   nav .icon-menu {
     position: absolute;
     top: 1.5rem;
-    right: 2rem;
+    right: 1rem;
   }
   nav.show .icon-menu {
     visibility: hidden;
