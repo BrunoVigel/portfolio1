@@ -785,13 +785,26 @@ footer .container a svg {
     -webkit-box-pack: initial;
         -ms-flex-pack: initial;
             justify-content: initial;
-    padding: 11.2rem 1rem 0 1rem;
+    padding: 7rem 1rem 0 1rem;
+  }
+  #hero .information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #hero .information h1 {
     font-size: 3.5rem;
   }
   #hero .information p {
     font-size: 2rem;
+    margin: 2rem 0;
   }
   #hero .information a {
     font-size: 2rem;
@@ -842,7 +855,6 @@ footer .container a svg {
     -webkit-box-pack: initial;
         -ms-flex-pack: initial;
             justify-content: initial;
-    padding: 11.2rem 1rem 0 1rem;
   }
   #hero .information h1 {
     font-size: 2rem;
