@@ -32,6 +32,10 @@
       .text {
         order: 2;
         text-align: center;
+
+        h2 {
+          padding-bottom:5rem;
+        }
       }
     }
   }
@@ -39,7 +43,7 @@
   #skills {
     .container {
       .title {
-        font-size: 2rem;
+        font-size: 3.5rem;
       }
     }
     .swiper-slide {
@@ -206,6 +210,14 @@
         p {
           font-size: 1rem;
         }
+      }
+    }
+  }
+
+  #skills {
+    .container {
+      .title {
+        font-size: 2rem;
       }
     }
   }
