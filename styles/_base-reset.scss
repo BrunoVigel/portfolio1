@@ -65,7 +65,7 @@ a.active {
 
 // back to top
 .back-to-top {
-  background: #1C1D25;
+  background: $primary-color;
   
 
   position: fixed;
@@ -102,7 +102,7 @@ a.active {
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   background: #fff;
 
   /* Center slide text vertically */

@@ -14,7 +14,7 @@
   transform: translateY(0) scale(1);
 }
 
-.newsletter {
+.exit-intent {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -22,7 +22,7 @@
 }
 
 /* Popup-specific styles */
-.newsletter {
+.exit-intent {
   background-color: $primary-color;
   padding-top: 2rem;
   border-radius: 3px;
@@ -67,7 +67,7 @@
     }
   }
   input 				{
-    font-size:18px;
+    font-size:1.125rem;
     padding:10px;
     width:100%;
     border:1px solid #757575;

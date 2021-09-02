@@ -90,7 +90,7 @@ a.active a.active {
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   background: #fff;
   /* Center slide text vertically */
   display: -webkit-box;
@@ -133,7 +133,7 @@ a.active a.active {
           transform: translateY(0) scale(1);
 }
 
-.newsletter {
+.exit-intent {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -142,29 +142,29 @@ a.active a.active {
 }
 
 /* Popup-specific styles */
-.newsletter {
+.exit-intent {
   background-color: #1C1D25;
   padding-top: 2rem;
   border-radius: 3px;
 }
 
-.newsletter .text {
+.exit-intent .text {
   color: white;
   font-weight: lighter;
   padding: 0 2rem;
 }
 
-.newsletter .text b {
+.exit-intent .text b {
   font-size: 2.5rem;
   padding-top: 1.5rem;
 }
 
-.newsletter .text p {
+.exit-intent .text p {
   font-size: 1.5rem;
   padding: 1.5rem 0;
 }
 
-.newsletter form {
+.exit-intent form {
   background-color: white;
   padding: 2rem;
   display: -webkit-box;
@@ -179,7 +179,7 @@ a.active a.active {
           align-items: center;
 }
 
-.newsletter form .input-info {
+.exit-intent form .input-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,29 +193,29 @@ a.active a.active {
   /* ANIMATIONS ================ */
 }
 
-.newsletter form .input-info .group {
+.exit-intent form .input-info .group {
   position: relative;
   margin-bottom: 45px;
 }
 
-.newsletter form .input-info .group:nth-child(1) {
+.exit-intent form .input-info .group:nth-child(1) {
   margin-right: 7rem;
 }
 
-.newsletter form .input-info input {
-  font-size: 18px;
+.exit-intent form .input-info input {
+  font-size: 1.125rem;
   padding: 10px;
   width: 100%;
   border: 1px solid #757575;
   border-radius: 6px;
 }
 
-.newsletter form .input-info input:focus {
+.exit-intent form .input-info input:focus {
   outline: none;
   border: 1px solid #5264AE;
 }
 
-.newsletter form .input-info label {
+.exit-intent form .input-info label {
   color: #999;
   font-size: 18px;
   font-weight: normal;
@@ -228,7 +228,7 @@ a.active a.active {
   -webkit-transition: 0.2s ease all;
 }
 
-.newsletter form .input-info input:focus ~ label, .newsletter form .input-info input:valid ~ label {
+.exit-intent form .input-info input:focus ~ label, .exit-intent form .input-info input:valid ~ label {
   top: -10px;
   left: 10px;
   font-size: 14px;
@@ -238,13 +238,13 @@ a.active a.active {
   z-index: 999;
 }
 
-.newsletter form .input-info .bar {
+.exit-intent form .input-info .bar {
   position: relative;
   display: block;
   width: 300px;
 }
 
-.newsletter form .input-info .bar:before, .newsletter form .input-info .bar:after {
+.exit-intent form .input-info .bar:before, .exit-intent form .input-info .bar:after {
   content: '';
   height: 2px;
   width: 0;
@@ -256,19 +256,19 @@ a.active a.active {
   -webkit-transition: 0.2s ease all;
 }
 
-.newsletter form .input-info .bar:before {
+.exit-intent form .input-info .bar:before {
   left: 50%;
 }
 
-.newsletter form .input-info .bar:after {
+.exit-intent form .input-info .bar:after {
   right: 50%;
 }
 
-.newsletter form .input-info input:focus ~ .bar:before, .newsletter form .input-info input:focus ~ .bar:after {
+.exit-intent form .input-info input:focus ~ .bar:before, .exit-intent form .input-info input:focus ~ .bar:after {
   width: 50%;
 }
 
-.newsletter form .input-info .highlight {
+.exit-intent form .input-info .highlight {
   position: absolute;
   height: 60%;
   width: 100px;
@@ -278,7 +278,7 @@ a.active a.active {
   opacity: 0.5;
 }
 
-.newsletter form .input-info input:focus ~ .highlight {
+.exit-intent form .input-info input:focus ~ .highlight {
   -webkit-animation: inputHighlighter 0.3s ease;
   animation: inputHighlighter 0.3s ease;
 }
@@ -303,12 +303,12 @@ a.active a.active {
   }
 }
 
-.newsletter form .group-message {
+.exit-intent form .group-message {
   position: relative;
   width: 45rem;
 }
 
-.newsletter form .group-message textarea {
+.exit-intent form .group-message textarea {
   display: block;
   width: 100%;
   font-size: 1.2rem;
@@ -318,11 +318,11 @@ a.active a.active {
   outline: none;
 }
 
-.newsletter form .group-message textarea:focus {
+.exit-intent form .group-message textarea:focus {
   border: 1px solid #5264AE;
 }
 
-.newsletter form .group-message textarea:focus ~ label {
+.exit-intent form .group-message textarea:focus ~ label {
   font-size: 14px;
   top: -10px;
   left: 10px;
@@ -330,7 +330,7 @@ a.active a.active {
   color: #5264AE;
 }
 
-.newsletter form .group-message label {
+.exit-intent form .group-message label {
   position: absolute;
   left: 10px;
   top: 10px;
@@ -342,7 +342,7 @@ a.active a.active {
   transition: .2s;
 }
 
-.newsletter form button {
+.exit-intent form button {
   border: none;
   background-color: #f88156;
   color: white;
@@ -355,11 +355,11 @@ a.active a.active {
   transition: .2s;
 }
 
-.newsletter form button:hover {
+.exit-intent form button:hover {
   background-color: #cc582d;
 }
 
-.newsletter .close {
+.exit-intent .close {
   color: white;
   position: absolute;
   top: 0;
@@ -403,7 +403,7 @@ header.scroll {
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: #f88156;
+  background-color: #1C1D25;
   -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
 }
@@ -440,7 +440,7 @@ header.scroll {
   border: none;
   background-color: #f88156;
   padding: 1rem 2rem;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   -webkit-transition: .5s;
   transition: .5s;
   cursor: pointer;
@@ -572,6 +572,7 @@ header.scroll {
 }
 
 #projetos .container .projetos a img {
+  display: block;
   width: 100%;
   height: 100%;
 }
